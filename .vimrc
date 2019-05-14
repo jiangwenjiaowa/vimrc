@@ -33,7 +33,8 @@ Bundle 'VisIncr'
 "Bundle 'scrooloose/nerdcommenter'
 Bundle 'matchit.zip'
 Bundle 'Conque-Shell'
-Bundle 'bling/vim-airline'
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 Bundle 'edkolev/tmuxline.vim'
 Bundle 'LanguageTool'
 Bundle 'nathanaelkane/vim-indent-guides'
@@ -232,24 +233,27 @@ call vundle#end()
 	let g:mma_highlight_option = "hemisu"
 
 "air-line
-	let g:airline_powerline_fonts=1
-	set laststatus=2
-	let g:airline_detect_whitespace=0
-	let g:airline_inactive_collapse=0
-	let g:airline#extensions#tagbar#enabled=1
-	let g:airline#extensions#tagbar#flags = 's'
-	let g:airline#extensions#csv#enabled=1
 	let g:airline#extensions#tabline#enabled=1
-	let g:airline#extensions#tabline#show_buffers = 0
-	let g:airline#extensions#tabline#show_tab_nr = 1
-	let g:airline#extensions#tabline#excludes = []
-	let g:airline#extensions#tabline#left_sep = ''
-	let g:airline#extensions#tabline#left_alt_sep = ''
-	let g:airline#extensions#tabline#right_sep = ''
-	let g:airline#extensions#tabline#right_alt_sep = ''
-	let g:airline#extensions#tabline#fnamemod = ':t'
-	let g:airline#extensions#tabline#show_close_button = 0
-	let g:airline#extensions#syntastic#enabled = 1
+	let g:airline_theme='solarized'
+	let g:airline_solarized_bg='dark'
+	"let g:airline_powerline_fonts=1
+	"set laststatus=2
+	"let g:airline_detect_whitespace=0
+	"let g:airline_inactive_collapse=0
+	"let g:airline#extensions#tagbar#enabled=1
+	"let g:airline#extensions#tagbar#flags = 's'
+	"let g:airline#extensions#csv#enabled=1
+	"let g:airline#extensions#tabline#enabled=1
+	"let g:airline#extensions#tabline#show_buffers = 0
+	"let g:airline#extensions#tabline#show_tab_nr = 1
+	"let g:airline#extensions#tabline#excludes = []
+	"let g:airline#extensions#tabline#left_sep = ''
+	"let g:airline#extensions#tabline#left_alt_sep = ''
+	"let g:airline#extensions#tabline#right_sep = ''
+	"let g:airline#extensions#tabline#right_alt_sep = ''
+	"let g:airline#extensions#tabline#fnamemod = ':t'
+	"let g:airline#extensions#tabline#show_close_button = 0
+	"let g:airline#extensions#syntastic#enabled = 1
 
 "conceal math symbols in latex
 	let g:tex_fold_enabled=0
@@ -288,7 +292,7 @@ call vundle#end()
 	au FileType tex nnoremap <F2> :Voom latex<return>
 
 "easytags
-	let g:easytags_cmd = '/usr/local/bin/ctags'
+"	let g:easytags_cmd = '/usr/local/bin/ctags'
 	set tags=./tags;
 	let g:easytags_dynamic_files = 2
 
@@ -300,10 +304,11 @@ call vundle#end()
 	au FileType tcl let b:delimitMate_balance_matchpairs = 1
 
 "YouCompleteMe
+	set encoding=utf-8
 	"due to conflict with Syntastic
 	let g:ycm_show_diagnostics_ui = 0
 	"global youcompleteme extra configuration file directory
-	let g:ycm_global_ycm_extra_conf = '~/Google Drive/Vim/ycm_extra_conf.py'
+	"let g:ycm_global_ycm_extra_conf = '~/Google Drive/Vim/ycm_extra_conf.py'
 	"turn off youcompleteme for following filetypes
 	let g:ycm_filetype_blacklist = {
 	                                \ 'tagbar'   : 1,
