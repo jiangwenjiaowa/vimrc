@@ -6,7 +6,7 @@ set rtp+=/root/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 "bundles
-Bundle 'VundleVim/vundle'
+Bundle 'VundleVim/Vundle.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
