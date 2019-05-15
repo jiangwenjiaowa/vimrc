@@ -2,7 +2,7 @@ set nocompatible
 filetype on
 
 "set plugin directory
-set rtp+=/usr/.vim/bundle/Vundle.vim 
+set rtp+=/root/.vim/bundle/Vundle.vim 
 call vundle#begin()
 
 "bundles
