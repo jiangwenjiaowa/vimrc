@@ -6,7 +6,6 @@ set rtp+=/root/.vim
 call plug#begin('/root/.vim/plugins')
 
 "bundles
-Plug 'VundleVim/Vundle.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'rstacruz/sparkup'
